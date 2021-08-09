@@ -57,3 +57,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'slim'
 gem 'html2slim'
+
+# Bootstrap
+gem 'bootstrap', '~> 5.0.1'
+gem 'jquery-rails'
