@@ -61,3 +61,6 @@ gem 'html2slim'
 # Bootstrap
 gem 'bootstrap', '~> 5.0.1'
 gem 'jquery-rails'
+
+# 初期データ
+gem 'seed-fu'

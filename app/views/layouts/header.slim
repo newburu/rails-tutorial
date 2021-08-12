@@ -15,3 +15,5 @@ header
           = link_to("FAQs", "#", {class: "nav-link"})
         li.nav-item
           = link_to("About", "#", {class: "nav-link"})
+        li.nav-item 
+          = link_to(@current_user.try(:name), "#", {class: "nav-link"})
