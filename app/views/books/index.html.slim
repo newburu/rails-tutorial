@@ -2,6 +2,13 @@ p#notice
   = notice
 h1
   | Books
+
+= search_form_for(@q) do |f|
+  p
+    = f.label :name_cont, '名前'
+    = f.search_field :name_cont
+  = f.submit
+
 table
   thead
     tr

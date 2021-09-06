@@ -64,3 +64,7 @@ gem 'jquery-rails'
 
 # 初期データ
 gem 'seed-fu'
+
+# 検索
+gem 'ransack'
+gem 'kaminari'
