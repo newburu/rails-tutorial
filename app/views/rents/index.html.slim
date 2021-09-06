@@ -1,0 +1,19 @@
+p#notice
+  = notice
+h1
+  | Rents
+
+table
+  thead
+    tr
+      th
+        | User
+      th
+        | Book
+  tbody
+    - @rents.each do |rent|
+      tr
+        td
+          = rent.user.name
+        td
+          = rent.book.name
