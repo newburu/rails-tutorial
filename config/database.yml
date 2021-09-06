@@ -50,3 +50,6 @@ test:
 #
 production:
   <<: *default
+  database: rails_tutorial_production
+  username: rails_tutorial
+  password: <%= ENV['RAILS_TUTORIAL_DATABASE_PASSWORD'] %>
