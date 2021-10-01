@@ -1,5 +1,5 @@
 class BooksController < ApplicationController
-  before_action :set_book, only: %i[ show edit update destroy ]
+  before_action :set_book, only: %i[ show edit update destroy rental ]
 
   # GET /books or /books.json
   def index
@@ -54,6 +54,15 @@ class BooksController < ApplicationController
     respond_to do |format|
       format.html { redirect_to books_url, notice: "Book was successfully destroyed." }
       format.json { head :no_content }
+    end
+  end
+
+  # GET /books/1/rental
+  def rental
+    if rent = @book.rental(@current_user)
+      render json: [ Rent: rent ] , status: 200
+    else
+      render json: [ ] , status: 500
     end
   end
 

@@ -10,6 +10,8 @@ table
         | User
       th
         | Book
+      th
+        | Rent DateTime
   tbody
     - @rents.each do |rent|
       tr
@@ -17,3 +19,5 @@ table
           = rent.user.name
         td
           = rent.book.name
+        td
+          = rent.created_at
