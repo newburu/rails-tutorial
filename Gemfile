@@ -68,3 +68,7 @@ gem 'seed-fu'
 # 検索
 gem 'ransack'
 gem 'kaminari'
+
+# i18n
+gem 'rails-i18n'
+gem 'enum_help'
