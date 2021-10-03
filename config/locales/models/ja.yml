@@ -1,0 +1,6 @@
+ja:
+  enums:
+    rent:
+      status:
+        start_rental: レンタル中
+        end_rental: 返却済
