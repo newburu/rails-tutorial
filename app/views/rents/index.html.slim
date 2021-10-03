@@ -11,7 +11,11 @@ table
       th
         | Book
       th
-        | Rent DateTime
+        | Status
+      th
+        | Start
+      th
+        | End
   tbody
     - @rents.each do |rent|
       tr
@@ -20,4 +24,8 @@ table
         td
           = rent.book.name
         td
-          = rent.created_at
+          = rent.status
+        td
+          = rent.start_at
+        td
+          = rent.end_at
