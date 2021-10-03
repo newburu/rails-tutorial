@@ -6,14 +6,12 @@ header
           = "TITLE"
       ul.nav.nav-pills
         li.nav-item
-          = link_to("Home", "#", {class: "nav-link active"})
+          = link_to("Home", root_path, {class: "nav-link active"})
         li.nav-item
-          = link_to("Features", "#", {class: "nav-link"})
+          = link_to("Books", books_path, {class: "nav-link"})
         li.nav-item
-          = link_to("Pricing", "#", {class: "nav-link"})
+          = link_to("Users", users_path, {class: "nav-link"})
         li.nav-item
-          = link_to("FAQs", "#", {class: "nav-link"})
-        li.nav-item
-          = link_to("About", "#", {class: "nav-link"})
+          = link_to("Rents", rents_index_path, {class: "nav-link"})
         li.nav-item 
           = link_to(@current_user.try(:name), "#", {class: "nav-link"})

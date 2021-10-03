@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: 'books#index'
   get 'rents/index'
   resources :books do
     member do
